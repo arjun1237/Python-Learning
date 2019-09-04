@@ -1,3 +1,4 @@
+
 s = [
     ['{', '}'],
     ['[', ']'],
@@ -6,11 +7,7 @@ s = [
 
 
 def matchParen(x):
-
-    global s
-
     b = []
-
     for i in x:
         if open_brack(i):
             b.append(i)
@@ -21,19 +18,18 @@ def matchParen(x):
                 return False
     return len(b) == 0
 
+
 def open_brack(brack):
-    global s
     for i in s:
         if i[0] == brack:
             return True
     return False
 
-def match(brack1, brack2):
-    global s
 
+def match(brack1, brack2):
     for i in s:
         if i[1] == brack2 and i[0] == brack1:
             return True
     return False
 
-print(matchParen("[(])"))
+print(matchParen("[(])")) # test case
