@@ -27,6 +27,8 @@ def check_num(num):
 
 print(is_part_of_series([0, 32, -64, -128, 512]))    #Test Case
 
+
+# to check the series for input 0 to 100
 def series():
     print("0: 0")
     print("1: 1")
