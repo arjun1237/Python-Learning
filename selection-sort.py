@@ -1,4 +1,4 @@
-def insertion(list1):
+def selection(list1):
     list_len = len(list1)
     for i in range(list_len - 1):
         small = i
@@ -13,4 +13,4 @@ def insertion(list1):
     return list1
 
 
-print(insertion([64, 34, 25, -12, 22, 11, -90]))  # test case
+print(selection([64, 34, 25, -12, 22, 11, -90]))  # test case
