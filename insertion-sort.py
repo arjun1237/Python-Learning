@@ -1,6 +1,6 @@
 def insertion(list1):
     list_len = len(list1)
-    for i in range(list_len):
+    for i in range(list_len - 1):
         small = i
         swap = False
         for j in range(i+1, list_len):
