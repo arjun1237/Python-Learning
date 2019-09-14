@@ -8,4 +8,4 @@ def bubble(list1):
     return list1
 
 
-print(bubble([5, 7, 3, 2, 8, 0]))  # test case
+print(bubble([64, 34, 25, 12, 22, 11, 90]))  # test case
