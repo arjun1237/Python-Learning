@@ -1,3 +1,5 @@
+# FYI - the selection of pivot is first element, so worst case scenario is O(n^2)
+
 list1 = [108, 64, 34, 25, 12, 22, 11, -90, 0]  # test case
 
 def partition(low, high):
