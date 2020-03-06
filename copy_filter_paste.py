@@ -10,7 +10,7 @@ files = []
 
 def extract(file_path):
     text_file = open(path.join(file_directory, file_path), 'r')
-    lines = [f for f in text_file.readlines() if "xpath=" in f and '@data-qa' not in f and '@name' not in f]
+    lines = [f for f in text_file.readlines() if "xpath=" in f and not any(x in f for x in ['@data-qa', '@name'])]
     open(path.join(new_folder, file_path), 'w').writelines(lines)
     print("written to : " + path.join(new_folder, file_path))
 
