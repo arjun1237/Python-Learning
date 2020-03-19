@@ -14,6 +14,8 @@ def check_paren(word):
     for i in word:
         if i in keys:
             list1.append(i)
+        elif not list1:
+            return False
         elif parenthesis[list1[-1]] == i:
             list1.pop()
         else:
