@@ -32,4 +32,4 @@ def match(brack1, brack2):
             return True
     return False
 
-print(matchParen("[(])")) # test case
+print(matchParen("[(])")) # test case - returns false
